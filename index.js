@@ -5,15 +5,6 @@ const app = express();
 const port = 3000; // Choose the desired port number
 
 // MySQL database connection configuration
-const pool = mysql.createPool({
-    host: '149.28.189.125',
-    user: 'awkdrhpgbw',
-    password: '9YKC2thkPk',
-    database: 'awkdrhpgbw',
-    connectionLimit: 10,
-    connectTimeout : 30000, // 30 seconds
-    acquireTimeout : 30000  // 30 seconds
-});
 
 let baseURL = 'https://studdog.app/wp-content'; 
 
