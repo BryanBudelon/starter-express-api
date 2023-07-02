@@ -5,7 +5,7 @@ const app = express();
 const port = 3000; // Choose the desired port number
 
 // MySQL database connection configuration
-const connection = mysql.createPool({
+const pool = mysql.createPool({
     connectionLimit: 10,
   host: '149.28.189.125',
   user: 'awkdrhpgbw',
