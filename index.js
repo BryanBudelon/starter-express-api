@@ -17,6 +17,16 @@ let baseURL = 'https://studdog.app/wp-content';
 //     console.log('Connected to the database');
 //   });
 
+const pool = mysql.createPool({
+  host: '149.28.189.125',
+  user: 'awkdrhpgbw',
+  password: '9YKC2thkPk',
+  database: 'awkdrhpgbw',
+  connectionLimit: 10,
+  connectTimeout : 30000, // 30 seconds
+  acquireTimeout : 30000  // 30 seconds
+});
+
   // Define a route to fetch data
 app.get('/api/posts', (req, res) => {
     const firstQuery = "SELECT post_name FROM wp_posts WHERE post_type = 'rz_listing' AND post_status = 'publish'";
