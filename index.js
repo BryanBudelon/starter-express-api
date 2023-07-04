@@ -3,9 +3,6 @@ const mysql = require('mysql');
 
 const cors = require('cors');
 
-
-
-
 const app = express();
 app.use(cors());
 const port = 3000; // Choose the desired port number
